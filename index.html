@@ -1,0 +1,1213 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Evergreen Livestock|Home</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet"> <!-- Font Awesome for icons -->
+    <style>
+      
+      .navbar-nav .nav-item .nav-link, .navbar-nav .nav-item a {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        transition: color 0.3s, transform 0.3s;
+        color: white;
+      }
+
+      .navbar-nav .nav-item .nav-link:hover, .navbar-nav .nav-item a:hover {
+        color: #00d1b2;
+        transform: translateY(-2px);
+      }
+
+      .navbar-brand {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+      }
+
+      .navbar-brand i {
+        color: #00d1b2;
+        transition: transform 0.3s;
+      }
+
+      
+      .navbar-brand i:hover {
+        transform: rotate(20deg);
+      }
+
+      .navbar-brand i:active {
+        transform: rotate(360deg);
+        transition-duration: 0.5s; 
+      }
+      header {
+    position: relative;
+    height: 55vh;
+    overflow: hidden;
+}
+
+
+.video-contain {
+    position: relative;
+    width: 100%;
+    height: 55vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0%;
+}
+
+
+.background-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+.dropdownr{
+    margin-bottom: 10px;
+}
+
+
+.header-content {
+    position: relative;
+    color:white;
+    text-align: center;
+    z-index: 1;
+}
+
+.header-content h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+.header-content h2{
+  color:#01575c;
+}
+.header-content h1:hover{
+  color:#04330a;
+}
+.header-content h2:hover{
+  color:#04330a;
+}
+main{
+  background-color: whitesmoke;
+}
+body{
+  margin:0px;
+}
+.int{
+  
+  margin: 10px;
+  border: 4px solid white;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  color:darkgreen;
+}
+.int h3{
+  color: black;
+}
+/*.tr{
+  border: 4px solid white;
+  border-radius: 10px;
+}
+.tr,.pra{
+font-size:20px;  
+  padding: 10px;
+  justify-content: space-around;
+  
+  
+  padding-top: 10px;
+  margin-top: 10px;
+  margin: 10px;
+}
+/*
+/*
+.img img{
+  margin:25px;
+  float: left;
+  height: 200px;
+  width:auto;
+  overflow: hidden;
+}
+.ser{
+  border: 4px solid white;
+  border-radius: 10px;
+}
+*/
+.services-section {
+    padding: 40px;
+    background-color: #f8f9fa;
+    text-align: center;
+}
+
+.services-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.services-list {
+    list-style:none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.service-item {
+background-color: #fff;
+    margin: 15px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+    text-align: left;
+    position: relative;
+    padding-left: 40px; 
+    font-weight: bold;
+}
+.service-item:hover {
+background-color:cadetblue;
+cursor: pointer;
+    margin: 15px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+    text-align: left;
+    position: relative;
+    padding-left: 40px; 
+}
+
+
+.service-item::before {
+    content: "";
+    position: absolute;
+    left: 15px;
+    top: 20px;
+    width: 10px;
+    height: 10px;
+    background-color: #28a745;
+    border-radius: 50%;
+}
+
+.service-header {
+    display: flex;
+    align-items: center;
+    
+    margin-bottom: 10px;
+}
+
+.service-icon {
+  
+    font-size: 2rem;
+    color: #28a745;
+    margin-right: 10px;
+}
+
+.service-content h3 {
+    font-size: 1.5rem;
+    color:black;
+}
+
+.service-content p {
+    font-size: 1rem;
+    color: #666;
+}
+
+.card{
+  float: left;
+  margin: 25px;
+  background-color: whitesmoke;
+  flex-wrap: wrap !important;
+}
+.card image{
+  height: 200px;
+}
+/*
+#why-choose-us-animated{
+
+  text-align: center;
+    padding: 60px;
+    background-color: #ffffff; 
+    text-align: center;
+}
+
+#why-choose-us-animated h2 {
+    font-size: 2.5rem;
+    color: #2c3e50; 
+    margin-bottom: 40px;
+}
+*/
+/*.why-choose-us-section {
+  background-color: grey;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+#why-choose-us-animated h2 {
+  font-size: 2.5em;
+  color: #fff;
+  margin-bottom: 20px;
+  animation: fadeIn 2s ease-in-out;
+}
+
+.reasons-cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.service-box {
+  background-color: #ffffff;
+  border-radius: 10px;
+  width: 250px;
+  padding: 20px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-box:hover {
+  transform: translateY(-10px);
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.card-content {
+  text-align: center;
+}
+
+.card-icon {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+  color: #4caf50;
+  animation: bounce 2s infinite;
+}
+
+h3 {
+  font-size: 1.5em;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 1em;
+  color: #666;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-10px);
+  }
+  60% {
+    transform: translateY(-5px);
+  }
+}*/
+.reasons-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.service-box {
+    background-color: grey; 
+    border-radius: 15px;
+    overflow: hidden;
+    width: 260px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    position: relative;
+}
+
+.service-box:hover {
+  background-color: cadetblue;
+    transform: translateY(-12px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+}
+
+.card-content {
+  
+    padding: 30px 20px;
+    text-align: center;
+    animation: zoomIn 0.8s ease forwards;
+}
+.card img{
+  
+  height: 200px;
+}
+.card-icon {
+    font-size: 3rem;
+    color: #f1c40f; 
+    margin-bottom: 20px;
+}
+
+.service-box h3 {
+    font-size: 1.75rem;
+    color: black; 
+    margin-bottom: 15px;
+}
+
+.service-box p {
+    font-size: 1rem;
+    font-weight: bold;
+    color:#FFFFE0; 
+}
+
+  
+  .why-choose-evergreen-section {
+    padding: 50px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+.why-choose-evergreen-section h1{
+  text-align: center;
+}
+.why-evergreen-animated h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+
+.evergreen-reasons-cards {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+
+.evergreen-service-box {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    width: 30%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.evergreen-service-box:hover {
+    transform: scale(1.05);
+}
+
+.evergreen-card-content {
+    text-align: left;
+}
+
+.evergreen-card-icon {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.evergreen-card-content h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.evergreen-card-content p {
+    font-size: 1em;
+    line-height: 1.5em;
+}
+
+
+@media screen and (max-width: 480px) {
+    .why-evergreen-animated h2 {
+        font-size: 1.8em;
+    }
+
+    .evergreen-reasons-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .evergreen-service-box {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .evergreen-card-icon {
+        font-size: 1.5em;
+    }
+
+    .evergreen-card-content h3 {
+        font-size: 1.2em;
+    }
+
+    .evergreen-card-content p {
+        font-size: 0.9em;
+    }
+}
+ 
+    .car{
+       float: left;
+     }
+     .card:hover{
+       color: green;
+       cursor: pointer;
+     }
+     .latest-news {
+    padding: 60px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.latest-news h2 {
+    font-size: 2.5rem;
+    color: #2c3e50;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.blog-posts {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.blog-card {
+    background-color: grey;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+}
+
+.blog-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.blog-content {
+    padding: 20px;
+    text-align: left;
+}
+
+.blog-content h3 {
+    font-size: 1.5rem;
+    color: solid black;
+    margin-bottom: 15px;
+}
+
+.blog-content p {
+    font-size: 1rem;
+    color:white;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.read-more {
+  border: 2px white;
+  text-align: center;
+  background-color:blue;
+  padding: 10px;
+  margin: 5px;
+  border-radius: 6px;
+    font-size: 1rem;
+    color:white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+.contact-us {
+    padding: 60px;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+.contact-us h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 40px;
+}
+
+.contact-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.contact-item {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+    width: 250px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: left;
+}
+
+.contact-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.contact-icon {
+    font-size: 2rem;
+    color: #3498db;
+    margin-bottom: 10px;
+}
+
+.contact-item h3 {
+    font-size: 1.5rem;
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+.contact-item p {
+    font-size: 1rem;
+    color: #666;
+}
+
+.contact-item a {
+    color: #3498db;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.contact-item a:hover {
+    color: #2980b9;
+}
+
+
+.site-footer {
+  border: 4px white;
+  border-radius: 10px;
+  margin: 5px;
+    background-color: #333;
+    color: #fff;
+    padding: 40px 0;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+.footer-content {
+  border: 2px white;
+  border-radius:6px;
+  margin :5px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-logo {
+    font-size: 2rem;
+    color: #3498db;
+    margin-bottom: 20px;
+}
+
+.footer-links {
+  
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.footer-links li {
+    margin: 10px 0;
+}
+
+.footer-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #3498db;
+}
+
+.footer-bottom {
+    margin-top: 20px;
+    font-size: 0.875rem;
+    color: #aaa;
+}
+
+
+.container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .button-wrapper {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        h3 {
+            margin: 10px 0;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        button {
+            padding: 15px 60px; 
+            font-size: 18px;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: background-color 0.5s ease;
+        }
+
+        
+        @keyframes colorChange {
+            0% { background-color: #ff4e4e; }
+            33% { background-color: #4eff4e; }
+            66% { background-color: #4e4eff; }
+            100% { background-color: #ff4e4e; }
+        }
+
+        button {
+            animation: colorChange 3s infinite;
+        }
+    
+
+
+
+@media screen and (max-width: 480px) {
+    .footer-logo {
+        font-size: 1.5rem;
+    }
+
+    .footer-links {
+        flex-direction:row;
+    }
+    .contact-us h2 {
+        font-size: 2rem;
+    }
+
+    .contact-item h3 {
+        font-size: 1.25rem;
+    }
+
+    .contact-item p {
+        font-size: 0.9rem;
+    }
+
+    .contact-icon {
+        font-size: 1.75rem;
+    }
+
+.read-more:hover {
+    color: black;
+}
+        .navbar-brand {
+            
+          font-size: 1.2rem;
+        }
+        .header-content h1 {
+        font-size: 2rem;
+    }
+.header-content h3{
+    font-size: 100%
+}
+    .header-content p {
+        font-size: 1rem;
+    }
+
+    header {
+        height: 55vh;
+    }
+    
+    .video-contain{
+      height: 55vh;
+    }
+    .card{
+        border: 2px solid whitesmoke;
+      
+        
+        margin-left: 50px;
+        justify-content: space-between;
+        cursor: zoom-in; 
+    }
+    .int{
+      text-align: left;
+    }
+    .int h3{
+      color: black;
+    }
+    .services-section h2 {
+        font-size: 2rem;
+    }
+    
+    .service-item {
+        max-width: 90%;
+        margin: 10px auto;
+    }
+
+    .service-icon {
+        font-size: 1.75rem;
+    }
+
+    .service-content h3 {
+        font-size: 1.25rem;
+    }
+
+    .service-content p {
+        font-size: 0.9rem;
+    }
+
+    .why-choose-us-animated h2 {
+        font-size: 2rem;
+    }
+
+    .service-box {
+        width: 100%;
+        margin: 10px auto;
+    }
+
+    .card-content {
+        padding: 20px 15px;
+    }
+
+    .card-icon {
+        font-size: 2.5rem;
+    }
+
+    .service-box h3 {
+        font-size: 1.5rem;
+    }
+
+    .service-box p {
+        font-size: 0.9rem;
+    }
+    .latest-news h2 {
+        font-size: 2rem;
+    }
+
+    .blog-content h3 {
+        font-size: 1.25rem;
+    }
+
+    .blog-content p {
+        font-size: 0.9rem;
+    }
+
+    .read-more {
+        font-size: 0.9rem;
+    }
+    .contact-us h2 {
+        font-size: 2rem;
+    }
+
+    .contact-item h3 {
+        font-size: 1.25rem;
+    }
+
+    .contact-item p {
+        font-size: 0.9rem;
+    }
+
+    .contact-icon {
+        font-size: 1.75rem;
+    }
+    .container {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            button {
+                width: 100%;
+                font-size: 16px;
+            }
+    
+      }
+    </style>
+  </head>
+  <body>
+
+    <nav class="navbar navbar-dark bg-dark fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="" style="color:white; font-family:  'Arial Narrow', Arial, sans-serif; font-weight:bolder;">
+          <i class="fas fa-cow" ></i> Evergreen Livestock 
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title text-muted" id="offcanvasDarkNavbarLabel">Click On Below links for desire INFORMATIONS</h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a href="index.html" class="nav-link" >
+                  <i class="fas fa-home"></i> Home
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">  
+                
+                
+                  <i class="fas fa-info-circle"></i> About us
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="product.html" class="nav-link">
+                  <i class="fas fa-box-open"></i> Our PRODUCTS
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="contact.html" class="nav-link">
+                  <i class="fas fa-envelope"></i> Contact Us
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="blogs.html" class="nav-link">
+                  <i class="fas fa-blog"></i> Blogs
+                </a>
+              </li>
+              
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="animals.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <i class="fas fa-drumstick-bite"></i> Goats & Hens
+                </a>
+                <ul class="dropdown-menu dropdown-menu-dark">
+                  <li><a class="dropdown-item" href="goat.html"><i class="fas fa-goat"></i> Goats</a></li>
+                  <li><a class="dropdown-item" href="hens.html"><i class="fas fa-dove"></i> Hens</a></li>
+                  <li><a class="dropdown-item" href="cows.html"><i class="fas fa-cow"></i> Cows & Bulls</a></li>
+                </ul>
+              </li>
+            </ul>
+
+            <form class="d-flex mt-3" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <header>
+            <div class="video-contain">
+                <video autoplay muted loop class="background-video">
+                    <source src="gh.MP4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <div class="header-content">
+                    <h1>Evergreen Livestock</h1>
+                    <h3>Premium livestock for your Farm Needs</h3>
+                </div>
+            </div>
+        </header>
+        <main>
+          <section >
+            <div class="int">
+              
+          <h1>Wellcome to Evergreen Livestock!</h1>
+          <h3>Premium livestock for your Farm Needs</h3>
+          </div>
+          </section>
+  <!----
+          <section class="tr">
+          <div class="pra">
+                 <p>At Evergreen Livestock, we pride ourselves on providing the highest quality <b>cows, goats, and hens, raised with care and dedication. Our animals thrive on sustainable farming practices, ensuring they are healthy, happy, and well-nourished</b>. We go above and beyond to ensure that our livestock receive the best treatment, from spacious, clean living conditions to regular veterinary care. Our commitment to ethical farming and animal welfare guarantees that every purchase supports a farm that values both its animals and its customers</p>
+          </div>
+                 <div class="img">
+            <img src="img/tr.JPEG">
+        <img src="img/tg.JPEG">
+        
+        <img src="img/RR.JPEG">
+        <img src="img/coe.JPEG">
+        <img src="img/he.JPEG">
+        </div>
+        </section>
+      
+      <section id="id">
+        <div class="ser">
+          <h1>our services</h1>
+        </div>
+      </section>
+    -->
+
+    
+  
+
+    <div class="container">
+        <div class="button-wrapper">
+            <h3>For Goats 👇👇</h3>
+            <a href="goat.html" target="_blank">
+                <button>Click Here</button>
+            </a>
+        </div>
+
+        <div class="button-wrapper">
+            <h3>For Cows 👇👇</h3>
+            <a href="cows.html" target="_blank">
+                <button>Click Here</button>
+            </a>
+        </div>
+
+        <div class="button-wrapper">
+            <h3>For Hens 👇👇</h3>
+            <a href="hens.html" target="_blank">
+                <button>Click Here</button>
+            </a>
+        </div>
+    </div>
+
+
+
+    <div class="services-section">
+      <h2>Our Services</h2>
+      <ul class="services-list">
+          <li class="service-item">
+              <div class="service-header">
+                  <i class="service-icon">🐄</i>
+                  <h3>Livestock Sales</h3>
+              </div>
+              <p>High-quality livestock available for sale, including goats, buffalo, cows, and hens.</p>
+          </li>
+          <li class="service-item">
+              <div class="service-header">
+                  <i class="service-icon">🌱</i>
+                  <h3>Sustainable Farming</h3>
+              </div>
+              <p>Our farming practices focus on sustainability and environmental stewardship.</p>
+          </li>
+          <li class="service-item">
+              <div class="service-header">
+                  <i class="service-icon">🔬</i>
+                  <h3>Breeding Services</h3>
+              </div>
+              <p>Expert breeding services to help you get the best quality livestock.</p>
+          </li>
+          <li class="service-item">
+              <div class="service-header">
+                  <i class="service-icon">👨‍🏫</i>
+                  <h3>Consultation</h3>
+              </div>
+              <p>Professional advice on livestock management, health, and nutrition.</p>
+          </li>
+          <li class="service-item">
+            <div class="service-header">
+                <i class="service-icon">🥛</i>
+                <h3>Dairy and Egg Products</h3>
+            </div>
+            <p>Fresh and organic dairy products and eggs, straight from our farm to your table.</p>
+        </li>
+        <li class="service-item">
+          <div class="service-header">
+              <i class="service-icon">💊</i>
+              <h3>Animal Health & Wellness</h3>
+          </div>
+          <p>Comprehensive health care and wellness programs to ensure your livestock stays healthy and productive.</p>
+      </li>
+      </ul>
+  </div>
+    <section>
+    <div class="card" style="width: 18rem;">
+      <img src="img/YU.JPEG" class="card-img-top" alt="Rajanpuri Bakra">
+      <div class="card-body">
+        <h3 class="card-title">Rajanpuri Bakra</h3>
+        <p class="card-text">We offer Rajanpuri goats in <b>various sizes and colors</b>, known for their excellent breed and health. These beautiful goats provide delicious meat. Raised naturally and organically, our goats are strong and well-cared for. Each undergoes a medical checkup. Choose a goat for healthy meat or as a hobby.</p>
+        <a href="#" class="btn btn-primary">Learn more</a>
+      </div>
+    </div>  
+    <div class="card" style="width: 18rem;">
+      <img src="img/RR.JPEG" class="card-img-top" alt="gulba bakra">
+      <div class="card-body">
+        <h3 class="card-title">Gulaba Bakra</h3>
+        <p class="card-text">We have goats of<b> every size and color available</b>. You can get any type of goat according to your preference. These goats are not only beautiful to look at, but their health and meat quality are also unparalleled. We offer goats in various colors and sizes to meet your needs and preferences..</p>
+        <a href="#" class="btn btn-primary">Learn morer</a>
+      </div>
+    </div>
+    <div class="card" style="width: 18rem;">
+      <img src="img/de.JPEG" class="card-img-top" alt="simdhi desi bakra">
+      <div class="card-body">
+        <h3 class="card-title">Desi bakra</h3>
+        <p class="card-text">We offer Desi goats in various <b>sizes and colors</b>, known for their excellent breed and health. These beautiful goats provide delicious meat. Raised naturally and organically, our goats are strong and well-cared for. Each undergoes a medical checkup. Choose a goat for healthy meat or as a hobby..</p>
+        <a href="#" class="btn btn-primary">Learn more</a>
+      </div>
+    </div>
+    <div class="card" style="width: 18rem;">
+      <img src="img/tr.JPEG" class="card-img-top" alt="Nawabshi Bakra">
+      <div class="card-body">
+        <h3 class="card-title">NawabShahi Bakra</h3>
+        <p class="card-text">We offer Desi goats in various <b>sizes and colors</b>, known for their excellent breed and health. These beautiful goats provide delicious meat. Raised naturally and organically, our goats are strong and well-cared for. Each undergoes a medical checkup. Choose a goat for healthy meat or as a hobby</p>
+        <a href="#" class="btn btn-primary">Learn more</a>
+      </div>
+    </div>
+    
+    
+    <div class="card" style="width: 18rem;">
+      <img src="img/bu.JPEG" class="card-img-top" alt="buffalo">
+      <div class="card-body">
+        <h3 class="card-title">Buffalos Breeds</h3>
+        <p class="card-text">At Evergreen Livestock, <b>we provide a premium selection of buffalo, ideal for both dairy and farming purposes</b><b> Our buffalo are well-bred, healthy, and ready to meet your agricultural needs. Whether you're looking to boost milk production or expand your herd</b>, our diverse range of buffalo ensures you'll find the perfect match for your farm.</p>
+        <a href="#" class="btn btn-primary">Learn more</a>
+      </div>
+    </div>
+    <div class="card" style="width: 18rem;">
+      <img src="img/cow.JPEG" class="card-img-top" alt="cows and bulls">
+      <div class="card-body">
+  <h3 class="card-title">Bulls & Cows</h3>
+        <p class="card-text"><br>At Evergreen Livestock, we offer a diverse selection of<b> cows and bulls from all breeds, <br>catering to every farming need. Whether you're looking for dairy, meat, or breeding stock, our healthy and well-cared-for animals</b> are perfect for your farm. Choose from our wide variety to find the ideal cattle.</p>
+        <a href="#" class="btn btn-primary">Learn more</a>
+      </div>
+    </div>
+    <div class="card" style="width: 18rem;">
+      <img src="img/main.JPEG" class="card-img-top" alt="mainwali murgy">
+      <div class="card-body">
+        <h3 class="card-title">Mianwali Murgy & murgian</h3>
+        <p class="card-text"><br>We have a range of<b> Mianwali Asil roosters and hens, known for their strength and resilience</b>. These birds are ideal for breeding and display, showcasing the true essence of the .All these Roasters are Fighter .You can Buy these roaster for fight. we have also hens for desi eggs</p>
+        <a href="#" class="btn btn-primary">Learn more</a>
+        
+      </div>
+    </div>
+    <div class="card" style="width: 18rem;">
+      <img src="img/sheep.JPG" class="card-img-top" alt="Sheeps">
+      <div class="card-body">
+        <h3 class="card-title">Sheeps Breeds</h3>
+        <p class="card-text"><br>At Evergreen Livestock, we offer a wide variety of sheep to meet your farming needs. Our selection includes <b>healthy and well-bred sheep, perfect for wool, meat, or breeding purposes. With various breeds available,</b> you can choose the best sheep suited to your requirements. Trust us to provide top-quality livestock for your farm.</p>
+        <a href="#" class="btn btn-primary">Learn more</a>
+      </div>
+    </div>
+  
+  </section>
+</main>
+  <section class="why-choose-evergreen-section">
+      <h8>..</h8>
+    <div class="why-evergreen-animated">
+        <h1><br>Why Choose Us?</h1>
+        <div class="evergreen-reasons-cards">
+            <div class="evergreen-service-box">
+                <div class="evergreen-card-content">
+                    <i class="evergreen-card-icon">🏅</i>
+                    <h3>Proven Expertise</h3>
+                    <p>We have a track record of excellence in livestock management and customer service.</p>
+                </div>
+            </div>
+
+            <div class="evergreen-service-box">
+                <div class="evergreen-card-content">
+                    <i class="evergreen-card-icon">💚</i>
+                    <h3>Ethical Practices</h3>
+                    <p>Our methods are rooted in sustainability and ethical treatment of animals.</p>
+                </div>
+            </div>
+
+            <div class="evergreen-service-box">
+                <div class="evergreen-card-content">
+                    <i class="evergreen-card-icon">⚙️</i>
+                    <h3>Advanced Technology</h3>
+                    <p>We employ the latest technology to ensure the best outcomes for our livestock and clients.</p>
+                </div>
+            </div>
+
+            <!-- 4th Card -->
+            <div class="evergreen-service-box">
+                <div class="evergreen-card-content">
+                    <i class="evergreen-card-icon">🌱</i>
+                    <h3>Sustainable Farming</h3>
+                    <p>Our farms follow eco-friendly practices to ensure a greener and healthier environment.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+  </section>
+<section class="latest-news">
+  <h2>Latest News & Blogs</h2>
+  <div class="blog-posts">
+      <div class="blog-card">
+          <div class="blog-content">
+              <h3>Understanding Livestock Management</h3>
+              <p>Learn the basics of livestock management, including best practices for raising healthy animals and increasing productivity.</p>
+              <a href="blog-post-1.html" class="read-more">Read More</a>
+          </div>
+      </div>
+      <div class="blog-card">
+          <div class="blog-content">
+              <h3>Importance of Ethical Practices</h3>
+              <p>Discover why ethical practices in livestock farming are crucial for sustainability and animal welfare.</p>
+              <a href="blog-post-2.html" class="read-more">Read More</a>
+          </div>
+      </div>
+      <div class="blog-card">
+          <div class="blog-content">
+              <h3>Advancements in Livestock Technology</h3>
+              <p>Explore the latest technological advancements that are transforming the livestock industry.</p>
+              <a href="blog-post-3.html" class="read-more">Read More</a>
+          </div>
+      </div>
+  </div>
+  <section class="contact-us">
+    <h2>Contact Us</h2>
+    <div class="contact-info">
+        <div class="contact-item">
+            <i class="contact-icon">👤</i>
+            <h3>Name</h3>
+            <p>Hammad Shafique</p>
+        </div>
+        <div class="contact-item">
+            <i class="contact-icon">📞</i>
+            <h3>Phone</h3>
+            <p>0305-7647597</p>
+        </div>
+        <div class="contact-item">
+            <i class="contact-icon">🏠</i>
+            <h3>Address</h3>
+            <p>Chak198p, Sadiqabad</p>
+        </div>
+        <div class="contact-item">
+            <i class="contact-icon">📧</i>
+            <h3>Email</h3>
+            <p><a href="mailto:hmdkhan874@gmail.com">hmdkhan874@gmail.com</a></p>
+        </div>
+    </div>
+</section>
+</section>    
+</main>
+<footer class="site-footer">
+  <div class="footer-content">
+      <h2 class="footer-logo">Evergreen Livestock</h2>
+      <ul class="footer-links">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Products</a></li>
+          <li><a href="#">Contact</a></li>
+      </ul>
+  </div>
+  <div class="footer-bottom">
+      <p>&copy; 2024 Evergreen Livestock. All Rights Reserved.</p>
+  </div>
+</footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+  </body>
+</html>
